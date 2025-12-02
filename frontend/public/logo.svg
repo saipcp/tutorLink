@@ -1,0 +1,16 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="32" cy="32" r="30" fill="#3B82F6" stroke="#1E40AF" stroke-width="2"/>
+
+  <!-- Book/Tutor Symbol -->
+  <path d="M20 22h24v20H20z" fill="white" stroke="#3B82F6" stroke-width="1"/>
+  <path d="M22 24h20v2H22zM22 28h16v2H22zM22 32h18v2H22zM22 36h14v2H22z" fill="#3B82F6"/>
+
+  <!-- Graduation Cap -->
+  <path d="M16 20l8-4 8 4v8l-8 4-8-4v-8z" fill="#1E40AF"/>
+  <path d="M24 16v8" stroke="white" stroke-width="1"/>
+  <circle cx="32" cy="24" r="1" fill="white"/>
+
+  <!-- Connecting Lines -->
+  <path d="M32 20v6M28 22h8" stroke="#1E40AF" stroke-width="1" opacity="0.6"/>
+</svg>
