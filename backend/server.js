@@ -35,6 +35,7 @@ const PORT = process.env.PORT || 5000;
 const API_VERSION = process.env.API_VERSION || "v1";
 
 // Security middleware
+app.set('trust proxy', true);
 app.use(helmet());
 
 // CORS configuration
