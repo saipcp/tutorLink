@@ -39,7 +39,7 @@ app.use(helmet());
 
 // CORS configuration
 const corsOptions = {
-  origin: process.env.CORS_ORIGIN || "http://localhost:5173",
+  origin: process.env.CORS_ORIGIN || "https://sxp1229.uta.cloud",
   credentials: true,
   optionsSuccessStatus: 200,
 };
@@ -100,7 +100,7 @@ server.listen(PORT, () => {
   console.log(`🚀 Server running on port ${PORT}`);
   console.log(`📝 Environment: ${process.env.NODE_ENV || "development"}`);
   console.log(`🌐 API Version: ${API_VERSION}`);
-  console.log(`🔗 API Base URL: http://localhost:${PORT}/api/${API_VERSION}`);
+  console.log(`🔗 API Base URL: https://sxp1229.uta.cloud/api/${API_VERSION}`);
 });
 
 // Handle unhandled promise rejections

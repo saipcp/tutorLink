@@ -8,7 +8,7 @@ const userSockets = new Map();
 export function initSocket(server) {
   io = new Server(server, {
     cors: {
-      origin: process.env.CORS_ORIGIN || "http://localhost:5173",
+      origin: process.env.CORS_ORIGIN || "https://sxp1229.uta.cloud",
       methods: ["GET", "POST"],
     },
   });

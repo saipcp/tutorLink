@@ -17,9 +17,9 @@ async function migrate() {
     
     // Step 1: Connect without database first to create it
     connection = await mysql.createConnection({
-      host: process.env.DB_HOST || "localhost",
-      user: process.env.DB_USER || "root",
-      password: process.env.DB_PASSWORD || "",
+      host: process.env.DB_HOST,
+      user: process.env.DB_USER,
+      password: process.env.DB_PASSWORD,
       port: parseInt(process.env.DB_PORT || "3306"),
     });
 
@@ -37,9 +37,9 @@ async function migrate() {
     await connection.end();
 
     connection = await mysql.createConnection({
-      host: process.env.DB_HOST || "localhost",
-      user: process.env.DB_USER || "root",
-      password: process.env.DB_PASSWORD || "",
+      host: process.env.DB_HOST,
+      user: process.env.DB_USER,
+      password: process.env.DB_PASSWORD,
       database: dbName,
       port: parseInt(process.env.DB_PORT || "3306"),
     });
